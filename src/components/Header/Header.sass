@@ -1,0 +1,57 @@
+.Header-container
+  height: 60px
+  font-family: 'Montserrat', sans-serif
+  display: flex
+  flex-direction: row
+  justify-content: center
+  background: #2C5C92
+  border-bottom: 3px solid #ffd965
+  .header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    width: 900px
+    height: 100%
+    color: whitesmoke
+    background-position: center
+    background: url('https://cdn140.picsart.com/248507323006212.png?r1024x1024')
+    background-size: 50%
+    .logo
+      height: 50px
+      width: 50px
+      transition: transform 1s
+      background-position: center
+      background-size: contain
+      background-image: url("http://www.stickpng.com/assets/images/5897aa00cba9841eabab615a.png")
+      &:hover
+        transform: rotate(360deg)
+    .navigation
+      display: flex
+      flex-direction: row
+      .navItem
+        cursor: pointer
+        margin-left: 18px
+        .text
+          @media (max-width: 600px)
+            display: none
+        a
+          text-decoration: none
+          color: #e7e7e7
+          &:hover
+            color: white
+    .userPanel
+      display: flex
+      flex-direction: row
+      align-items: center
+      .dropdown
+        margin-right: 15px
+        .dropdown-content
+          color: chartreuse
+      .userPic
+        border-radius: 50%
+        background-position: center
+        background-size: cover
+        height: 50px
+        width: 50px
+        cursor: pointer
